@@ -28,11 +28,28 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/*css del splash */ 
+
+.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full-screen height */
+  background-color: #6baed6; /* Replace with your desired background color */
+}
+
+.logo {
+  width: 100px; /* Adjust size */
+  animation: fade-in-out 2s ease-in-out infinite; /* Smooth animation */
+}
+
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 1;
   }
 }
